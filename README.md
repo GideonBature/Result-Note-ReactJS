@@ -2,7 +2,7 @@
 
 ## Overview
 
-ResultNote is a web application that empowers teachers, students, and parents to track academic progress, gain insights, and work together to achieve success.
+ResultNote is a web application that is used to record students' academic records, generate results and gain insight into the students' performance.
 
 ## Key Features
 
