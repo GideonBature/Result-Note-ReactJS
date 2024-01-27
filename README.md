@@ -59,5 +59,7 @@ Currently, two official plugins are available:
 ## Starting the app
 
   cd ResultNote
+
   ```npm install```
-  ````npm run dev```
+
+  ```npm run dev```
