@@ -13,36 +13,35 @@ ResultNote is a web application that empowers teachers, students, and parents to
 - **Parent Engagement:** Keep parents informed with score notifications.
 - **Third-Party Integrations:** Connect with email, PDF generation, and file storage services.
 
-**## Built for Everyone**
+## Built for Everyone
 
 - **Teachers:** Track progress, provide feedback, and make informed decisions.
 - **Students:** Stay informed about performance and set goals for improvement.
 - **Parents:** Stay connected to their child's academic journey and offer support.
 - **Admins:** Manage users, settings, and access insightful reports.
 
-**## Technology Stack**
+## Technology Stack
 
-- Frontend: React
+- Frontend: ReactJS
 - Backend: Flask
 - Database: Master-Slave MySQL
 - Application Servers: Load-balanced for scalability
 
-**## Get Started**
+## Get Started
 
 - Visit our website: [Website Link]
 - Explore our documentation: [Documentation Link]
 - Contact support: [Support Email]
 
-**## Join the community**
+## Join the community
 
 - GitHub repository: [GitHub Link]
 - Discussion forum: [Forum Link]
 
-**## Contribute**
+## Contribute
 
 - We welcome contributions! Please refer to our contribution guidelines: [Contribution Guidelines Link]
 
-**## License**
+## License
 
 ResultNote is licensed under the MIT License. See the LICENSE file for details.
-
