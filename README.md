@@ -1,4 +1,4 @@
-# ResultNote: Track student progress and empower informed decisions
+# ResultNote: Record and Generate Result
 
 ## Overview
 
