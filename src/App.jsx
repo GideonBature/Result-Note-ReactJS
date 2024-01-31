@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import SideBar from './components/Dashboard/SideBar'
+import SideBar from './components/Dashboard/Dashboard'
 
 function App() {
 
