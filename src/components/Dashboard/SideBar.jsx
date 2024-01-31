@@ -5,8 +5,9 @@ import mainlogo from '/src/assets/logo-RN.png';
 
 const navLinks = [
     { icon: 'bx bx-grid-alt', text: 'Dashboard', link: '#' },
-    { icon: 'bx bx-user', text: 'Student/Classes', link: '#' },
+    { icon: 'bx bxs-graduation', text: 'Student/Classes', link: '#' },
     { icon: 'bx bx-bar-chart-square', text: 'Exams', link: '#' },
+    { icon: 'bx bx-user', text: 'Teachers', link: '#' },
     { icon: 'bx bx-cog', text: 'Settings/profile', link: '#' },
 ];
 
