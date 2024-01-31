@@ -1,11 +1,10 @@
-import { useState } from 'react'
-import SideBar from './components/Dashboard/Dashboard'
+import Dashboard from './components/Dashboard/Dashboard'
 
 function App() {
 
   return (
     <>
-      <SideBar />
+      <Dashboard />
     </>
   )
 }
