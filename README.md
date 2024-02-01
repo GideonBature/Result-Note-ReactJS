@@ -1,4 +1,4 @@
-i# ResultNote: Record and Generate Result
+# ResultNote: Record and Generate Result
 
 ## Overview
 
