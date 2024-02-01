@@ -1,9 +1,9 @@
-import Dashboard from './components/Dashboard/Dashboard'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import Exam from './Pages/Exam'
 import Settings from './Pages/Settings'
 import Students from './Pages/Students'
 import Teachers from './Pages/Teachers'
+import Dashboard from './Pages/Dashboard'
 
 
 function App() {
@@ -12,12 +12,12 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Dashboard />} />
-          <Route path="/Dashboard" element={<Dashboard />} />
-          <Route path="/Exam" element={<Exam />} />
-          <Route path="/Settings" element={<Settings />} />
-          <Route path="/Students" element={<Students />} />
-          <Route path="/Teachers" element={<Teachers />} />
+          <Route path='/' element={<Dashboard />} />
+          <Route path='/Dashboard' element={<Dashboard />} />
+          <Route path='/exam' element={<Exam />} />
+          <Route path='/settings' element={<Settings />} />
+          <Route path='/students' element={<Students />} />
+          <Route path='/teachers' element={<Teachers />} />
         </Routes>
       </BrowserRouter>
     </>

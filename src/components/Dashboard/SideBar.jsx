@@ -15,12 +15,6 @@ function SideBar() {
 
     const [open, setOpen] = useState(true);
 
-    // const HandleLinkClick = (e) => {
-    //     if (!open) {
-    //         e.stopPropagation();
-    //     }
-    // };
-
     return (
         <div className='flex'>
             <div
@@ -30,6 +24,7 @@ function SideBar() {
                 className={`bx ${open ? 'bx-menu-alt-right' : 'bx-menu'} absolute mt-2 text-white ${open ? 'top-4 right-4' : 'top-4 right-6'} cursor-pointer`}
                 onClick={() => setOpen(!open)}
             ></i>
+                {/* Main logo on Sidebar */}
                 <div className={`w-24 mt-2 ml-auto mr-auto ${!open && "scale-0"}`}>
                     <img src={mainlogo} alt="" />
                 </div>
@@ -47,11 +42,15 @@ function SideBar() {
                     {navLinks.map((link, index) => (
                         <li
                             key={index}
-                            className={`flex items-center hover:bg-cyan-600 rounded-xl p-2 px-1 ${!open ? 'hover:bg-cyan-600 pl-4 -ml-3 -mr-2 rounded-xl' : 'p-2 px-1'}`}
+                            className={`group flex items-center hover:bg-cyan-600 rounded-xl p-2 ${!open ? 'hover:bg-cyan-600 pl-4 -ml-3 -mr-2.5 rounded-xl' : 'hover:bg-cyan-600 pl-4 -ml-3 -mr-2.5 rounded-xl'}`}
                         >
                             <a href={link.link} className="flex items-center">
                                 <i className={link.icon + ' text-white'}></i>
-                                <span className={`ml-2 pl-1 text-white ${!open && "scale-0"}`}>{link.text}</span>
+                                <span className={`ml-2 pl-1 text-white ${!open && "hidden"}`}>{link.text}</span>
+                                {/* Tooltip - mouse hover popup text beside icon when sidebar is closed */}
+                                {!open ? (
+                                    <span className={`tooltip ml-7 text-black text-xs font-serif font-thin bg-cyan-500 rounded p-1 px-2 pointer-events-none opacity-0 invisible scale-0 transition-transform transform group-hover:opacity-100 group-hover:visible group-hover:scale-100`}>{link.text}</span>
+                                ) : null}
                             </a>
                         </li>
                     ))}
