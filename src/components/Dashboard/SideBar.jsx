@@ -35,7 +35,7 @@ function SideBar() {
                         <input
                             type="text"
                             placeholder="Search.."
-                            className={`bg-sky-900 caret-cyan-600 p-2 placeholder:pl-8 w-full outline-none rounded-xl px-2 ${!open ? 'p-2 pr-4 right-0' : ''}`}
+                            className={`bg-sky-900 caret-cyan-600 p-2 placeholder:pl-8 w-full outline-none rounded-xl px-2 ${!open ? 'p-2 pr-4 right-0' : ''}`} onClick={() => setOpen(!open)}
                         />
                     </li>
                     {/* Map through navLinks objs & render dynamically */}
