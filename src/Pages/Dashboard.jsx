@@ -6,7 +6,7 @@ import Header from '../components/Dashboard/TopNavBar';
 function Dashboard() {
     return (
         <Layout>
-            <section className='font-sans font-bold'>
+            <section className=' flex-1 font-sans font-bold'>
                 <Header />
                 <Analytics />
             </section>
