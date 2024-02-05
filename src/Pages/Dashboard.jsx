@@ -1,11 +1,14 @@
 import React from 'react';
 import Layout from '../components/Dashboard/Layout';
+import Analytics from '../components/Dashboard/Analytics';
+import Header from '../components/Dashboard/TopNavBar';
 
 function Dashboard() {
     return (
         <Layout>
-            <section className='mt-16 font-sans font-bold'>
-                <h1>Welcome to your Dashboard!</h1>
+            <section className='font-sans font-bold'>
+                <Header />
+                <Analytics />
             </section>
         </Layout>
     );
