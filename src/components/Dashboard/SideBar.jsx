@@ -21,7 +21,7 @@ function SideBar() {
 
     return (
         <>
-            <div className={`${sidebarWidth} p-5 h-screen duration-700 bg-blue-950 relative `}
+            <div className={`${sidebarWidth} p-5 h-screen duration-700 bg-indigo-950 relative `}
             ><i
                 // menu icon changes when the side bar is toggled open or close
                 className={`bx ${open ? 'bx-menu-alt-right' : 'bx-menu'} absolute mt-2 text-white ${open ? 'top-4 right-4' : 'top-4 right-6'} cursor-pointer`}
@@ -32,10 +32,10 @@ function SideBar() {
                     <img src={mainlogo} alt="AppLogo" />
                 </div>
                 {/* Search input */}
-                <div className="relative font-normal text-sm  mt-9 -ml-3 -mr-2">
+                <div className="relative font-normal mt-9 -ml-3 -mr-2">
                     <i className={`bx bx-search absolute pointer-events-none top-3 text-white ${!open ? 'right-3.5' : 'right-3'}`}></i>
                     <input type="text" placeholder="Search.."
-                        className={`bg-sky-900 caret-cyan-600 p-2 placeholder:pl-8 w-full rounded-xl px-2 ${!open ? 'p-2 pr-4 right-0' : ''}`} onClick={() => { if (!open) toggleSidebar(); }}/>
+                        className={`bg-sky-900 caret-cyan-600 p-2 placeholder:pl-8 w-full rounded-xl px-2 ${!open ? 'p-2 pr-4 right-0' : ''}`} onClick={() => { if (!open) toggleSidebar(); }} />
                 </div>
                 {/* Sidebar Navlinks */}
                 <div className='flex-1 mt-5 space-y-2 font-normal font-sans'>
