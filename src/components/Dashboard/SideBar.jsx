@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import 'boxicons/css/boxicons.min.css';
 import mainlogo from '/src/assets/logo-RN.png';
 import { Link } from 'react-router-dom';
-import NewFeatures from '/src/Pages/NewFeatures';
 
 const navLinks = [
     { icon: 'bx bx-grid-alt', text: 'Dashboard', path: '/Dashboard' },
@@ -53,12 +52,12 @@ function SideBar() {
                         </li>
                     ))}
                 </div>
-                {/* New features */}
-                <div className="mt-20">
-                    <Link to="/NewFeatures" className="flex items-center text-white">
-                        <i className="bx bxs-briefcase pl-1"></i>
-                        <span className="ml-4">Features</span>
-                        <span className="bg-tertiaryColor text-black font-extrabold text-xs px-2 ml-4 rounded-full">NEW</span>
+                {/* nav to New features */}
+                <div className="mt-20 flex text-white">
+                    <Link to="/NewFeatures" className="flex">
+                        <i className="bx bxs-briefcase pl-1 mt-1"></i>
+                        <span className={`ml-4 ${!open && "hidden"}`}>Features</span>
+                        <span className={`ml-4 bg-tertiaryColor rounded-full text-xs py-1 px-2 pt-1 text-black font-bold ${!open && "hidden"}`}>NEW</span>
                     </Link>
                 </div>
             </div>
