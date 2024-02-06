@@ -9,7 +9,7 @@ const navBarLinks = [
 function TopNavBar() {
     return (
         <div className='flex justify-between items-center mt-5'>
-            <h1 className="ml-24 text-3xl font-bold text-white">Welcome to Dashboard, Udemy School</h1>
+            <h1 className="ml-24 text-3xl font-extrabold text-gray-600">Welcome to Dashboard, Udemy School</h1>
             <ul className="flex text-xs font-semibold text-white mr-6">
                 {navBarLinks.map((navLink, index) => (
                     <li key={index} className='mr-4'>
