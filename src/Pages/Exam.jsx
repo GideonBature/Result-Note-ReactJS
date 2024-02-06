@@ -1,10 +1,10 @@
 import React from 'react';
-import Layout from '../components/Dashboard/Layout';
+import Layout from '../components/Layout';
 
 function Exams() {
     return (
         <Layout>
-            <section className='mt-16 font-sans font-bold'>
+            <section className='mt-16 font-sans font-bold text-black'>
                 <h1>Examination records</h1>
             </section>
         </Layout>

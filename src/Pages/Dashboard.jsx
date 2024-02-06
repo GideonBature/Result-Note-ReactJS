@@ -1,16 +1,18 @@
 import React from 'react';
-import Layout from '../components/Dashboard/Layout';
+import Layout from '../components/Layout';
 import Analytics from '../components/Dashboard/Analytics';
 import TopNavBar from '../components/Dashboard/TopNavBar';
 
 function Dashboard() {
     return (
         <Layout>
-            <section className='flex font-sans font-bold '>
-                <h1 className='mt-2'>Welcom to your dashboard!</h1>
-                <TopNavBar/>
+            <div className='font-bold text-normal text-black'>
+                <div className='text-3xl mr-32 text-center'>
+                    <h1 className='mt-2'>Welcome to your dashboard BenHub!</h1>
+                </div>
+                <TopNavBar />
                 <Analytics />
-            </section>
+            </div>
         </Layout>
     );
 }
