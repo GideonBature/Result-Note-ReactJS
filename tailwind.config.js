@@ -5,7 +5,17 @@ export default {
 		"./src/**/*.{js,ts,jsx,tsx}",
 	],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primaryColor: 'rgba(21, 34, 89, 1)',
+        secondaryColor: 'rgba(80, 156, 219, 1)',
+        btnColor: '#2D88D4',
+        btnHoverColor: '#509CDB',
+      },
+      fontFamily: {
+        'kumbh': ['Kumbh Sans', 'sans-serif']
+      },
+    },
   },
   plugins: [],
 }
