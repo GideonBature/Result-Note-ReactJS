@@ -3,7 +3,7 @@ import Sidebar from './SideBar';
 
 function Layout({ children }) {
     return (
-        <div className="flex gap-7 bg-red-300">
+        <div className="flex gap-7 bg-white">
             <Sidebar />
                 {children}
         </div>
