@@ -4,6 +4,7 @@ import Settings from './Pages/Settings'
 import Students from './Pages/Students'
 import Teachers from './Pages/Teachers'
 import Dashboard from './Pages/Dashboard'
+import NewFeatures from './Pages/NewFeatures'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/Settings' element={<Settings />} />
           <Route path='/Students' element={<Students />} />
           <Route path='/Teachers' element={<Teachers />} />
+          <Route path='/NewFeatures' element={<NewFeatures />} />
         </Routes>
       </BrowserRouter>
     </>
