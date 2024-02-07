@@ -28,7 +28,7 @@ function SideBar() {
                     onClick={toggleSidebar}
                 ></i>
                     {/* Main logo on Sidebar */}
-                    <div className={`w-24 duration-700 mt-2 ml-auto mr-auto ${!open && "scale-0"}`}>
+                    <div className={`w-24 duration-700 mt-2 ml-auto mr-auto ${!open && " opacity-0 -translate-x-16 scale-0"}`}>
                         <img src={mainlogo} alt="AppLogo" />
                     </div>
                     {/* Search input */}
@@ -40,25 +40,27 @@ function SideBar() {
                     {/* Sidebar Navlinks */}
                     <div className='flex-1 mt-5 space-y-2'>
                         {/* Map through navLinks objs & render dynamically */}
-                        {navLinks.map((navMenuLink, index) => (
-                            <li key={index} className={`group flex items-center hover:bg-secondaryColor rounded-xl p-2 ${!open ? 'hover:bg-secondaryColor pl-4 -ml-3 -mr-2.5 rounded-xl duration-700' : 'hover:bg-secondaryColor pl-4 -ml-3 -mr-2.5 rounded-xl'}`} >
-                                <Link to={navMenuLink.path} className="flex items-center">
-                                    <i className={navMenuLink.icon + ' text-white'}></i>
-                                    <span className={`ml-2 pl-1 duration-700 text-white ${!open && "hidden"}`} >{navMenuLink.text}</span>
-                                    {/* Tooltip - hover text when sidebar is closed */}
-                                    {!open ? (
-                                        <span className={`tooltip ml-7 cursor-default text-black text-xs font-semibold bg-secondaryColor rounded p-1 px-2 opacity-0 invisible scale-0 transition-transform transform group-hover:opacity-100 group-hover:visible group-hover:scale-100`} onClick={(e) => e.preventDefault()}>{navMenuLink.text}</span>
-                                    ) : null}
-                                </Link>
-                            </li>
-                        ))}
+                        <ul>
+                            {navLinks.map((navMenuLink, index) => (
+                                <li key={index} className={`group flex items-center hover:bg-cyan-600 rounded-xl p-2 ${!open ? 'hover:bg-cyan-600 pl-4 -ml-3 -mr-2.5 rounded-xl' : 'hover:bg-cyan-600 pl-4 -ml-3 -mr-2.5 rounded-xl'}`} >
+                                    <Link to={navMenuLink.path} className="flex items-center">
+                                        <i className={navMenuLink.icon + ' text-white'}></i>
+                                        <span className={`ml-2 pl-1 duration-700 text-white ${!open && "opacity-0 -translate-x-28 scale-y-0"}`}>{navMenuLink.text}</span>
+                                        {/* Tooltip - hover text when sidebar is closed */}
+                                        {/* {!open ? (
+                                            <span className={`tooltip ml-7 cursor-default text-black font-serif text-xs font-thin bg-cyan-500 rounded p-1 px-2 opacity-0 invisible scale-0 transition-transform transform group-hover:opacity-100 group-hover:visible group-hover:scale-100`} onClick={(e) => e.preventDefault()}>{navMenuLink.text}</span>
+                                        ) : null} */}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
                     {/* nav to New features */}
                     <div className="mt-20 flex text-white">
                         <Link to="/NewFeatures" className="flex">
                             <i className="bx bxs-briefcase pl-1 mt-1"></i>
-                            <span className={`ml-4 ${!open && "hidden"}`}>Features</span>
-                            <span className={`ml-4 bg-tertiaryColor rounded-full text-xs py-1 px-2 pt-1 text-black font-bold ${!open && "hidden"}`}>NEW</span>
+                            <span className={`ml-4 duration-700 ${!open && "opacity-0 -translate-x-28 overflow-hidden"}`}>Features</span>
+                            <span className={`ml-4 bg-tertiaryColor duration-700 rounded-full text-xs py-1 px-2 pt-1 text-black font-bold ${!open && "opacity-0 -translate-x-28 overflow-hidden"}`}>NEW</span>
                         </Link>
                     </div>
                 </div>
