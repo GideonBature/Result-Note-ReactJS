@@ -20,7 +20,7 @@ function Dashboard() {
         <Layout>
             <div className='font-bold text-normal text-black'>
                 <div className='text-3xl mr-32 text-center'>
-                    <h1 className='mt-2'>{`Welcome to your dashboard ${tempSchName} school!`}</h1>
+                    <h1 className='mt-2'>{`Welcome to your dashboard, ${tempSchName} school!`}</h1>
                 </div>
                 <TopNavBar />
                 <Analytics />
