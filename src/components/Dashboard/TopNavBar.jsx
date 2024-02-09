@@ -8,7 +8,7 @@ const navBarLinks = [
 
 function TopNavBar() {
     return (
-        <div className='flex-1'>
+        <nav>
             <div className='fixed top-1 right-2 z-50 p-4'>
                 <ul className="flex text-xs font-semibold text-white">
                     {navBarLinks.map((navLink, index) => (
@@ -20,7 +20,7 @@ function TopNavBar() {
                     ))}
                 </ul>
             </div>
-        </div>
+        </nav>
     );
 }
 
