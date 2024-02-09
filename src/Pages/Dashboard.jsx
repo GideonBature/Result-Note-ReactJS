@@ -5,7 +5,6 @@ import TopNavBar from '../components/Dashboard/TopNavBar';
 
 function Dashboard() {
 
-
 // Implement fetch logic to get the registered school name!
     // const [schoolName, setSchoolName] = useState('');
 
@@ -15,7 +14,6 @@ function Dashboard() {
     //     ...
 
     // }, []);
-
     const tempSchName = 'BenHub'
 
     return (

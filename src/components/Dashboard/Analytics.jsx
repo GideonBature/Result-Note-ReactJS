@@ -16,6 +16,8 @@ function Analytics() {
 
     // useEffect(() => {
     //     fetch('url to fetch data')
+    // ..............
+    // ..........
 
     // }, []);
 
