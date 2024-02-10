@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const navBarLinks = [
     { name: 'Profile', path: '/Settings' },
-    { name: 'Logout', path: '#' }
+    { name: 'Logout', path: '/Home' }
 ];
 
 function TopNavBar() {
