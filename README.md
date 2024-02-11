@@ -63,3 +63,6 @@ Currently, two official plugins are available:
   ```npm install```
 
   ```npm run dev```
+
+### API
+The accompanying API can be seen at this link [ResultNote API](https://github.com/wrightkhlebisol/Result-Note-API)
