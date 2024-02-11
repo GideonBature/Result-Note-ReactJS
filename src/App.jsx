@@ -8,9 +8,11 @@ import Dashboard from './Pages/Dashboard'
 import NewFeatures from './Pages/NewFeatures'
 import Login from './components/login/Login';
 import Register from './components/register/Register';
-import Home from './components/landing_page/Home';
+// import Home from './components/landing_page/Home';
+import Home from './Pages/Home'
 
-const App = () => {
+
+function App() {
   return (
       <BrowserRouter>
         <Routes>
@@ -30,4 +32,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App

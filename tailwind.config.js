@@ -15,8 +15,7 @@ export default {
         btnHoverColor: '#509CDB',
       },
       fontFamily: {
-        'kumbh': ['Kumbh Sans', 'sans-serif'],
-        'karla': ['Karla', 'sans-serif'],
+        'kumbh': ['Kumbh Sans', 'sans-serif']
       },
       backgroundImage: {
         'hero-bg': "url('./src/assets/hero-bg.png')",
@@ -24,5 +23,5 @@ export default {
     },
   },
   plugins: [],
-}
+};
 
