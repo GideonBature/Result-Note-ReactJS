@@ -27,11 +27,13 @@ function StudentTable() {
                         </tr>
                     </thead>
                     {/* tableDetails - Student data */}
-                    <StudentData/>
+                    <StudentData />
                 </table>
             </div>
             {/* Student profile at the right hand side */}
-            <StudentProfile />
+            <div>
+                <StudentProfile />
+            </div>
         </div>
     );
 }
