@@ -1,0 +1,72 @@
+import React, { useState } from 'react';
+import 'boxicons/css/boxicons.min.css';
+import mainlogo from '/src/assets/logo-RN.png';
+import { Link } from 'react-router-dom';
+
+const navLinks = [
+    { icon: 'bx bx-grid-alt', text: 'Dashboard', path: '/Dashboard' },
+    { icon: 'bx bxs-graduation', text: 'Student/Classes', path: '/Students' },
+    { icon: 'bx bx-bar-chart-square', text: 'Examinations', path: '/Exam' },
+    { icon: 'bx bx-user', text: 'Teachers', path: '/Teachers' },
+    { icon: 'bx bx-cog', text: 'Settings/profile', path: '/Settings' },
+];
+
+function SideBar() {
+    const [open, setOpen] = useState(true);
+    const sidebarWidth = open ? 'w-56' : 'w-16';
+
+    // Sidebar toggle
+    const toggleSidebar = () => { setOpen(!open) };
+
+    return (
+        <>
+            <section className='flex gap-6'>
+                <div className={`${sidebarWidth} p-5 min-h-screen duration-700 bg-primaryColor relative `}
+                ><i
+                    // menu icon changes when the side bar is toggled open or close
+                    className={`bx ${open ? 'bx-menu-alt-right' : 'bx-menu'} absolute mt-2 text-white ${open ? 'top-4 right-4' : 'top-4 right-6'} cursor-pointer`}
+                    onClick={toggleSidebar}
+                ></i>
+                    {/* Main logo on Sidebar */}
+                    <div className={`w-24 duration-700 mt-2 ml-auto mr-auto ${!open && " opacity-0 -translate-x-16 scale-0"}`}>
+                        <img src={mainlogo} alt="AppLogo" />
+                    </div>
+                    {/* Search input */}
+                    <div className="relative font-normal mt-7 -ml-3 -mr-2">
+                        <i className={`bx bx-search absolute pointer-events-none top-3 text-white ${!open ? 'right-3.5' : 'right-3'}`}></i>
+                        <input type="text" placeholder="Search.."
+                            className={`bg-sky-900 p-2 placeholder:pl-8 w-full rounded-xl px-2 ${!open ? 'p-2 pr-4 right-0' : ''}`} onClick={() => { if (!open) toggleSidebar(); }} />
+                    </div>
+                    {/* Sidebar Navlinks */}
+                    <div className='flex-1 mt-5 space-y-2'>
+                        {/* Map through navLinks objs & render dynamically */}
+                        <ul>
+                            {navLinks.map((navMenuLink, index) => (
+                                <li key={index} className={`group flex items-center hover:bg-cyan-600 rounded-xl p-2 ${!open ? 'hover:bg-cyan-600 pl-4 -ml-3 -mr-2.5 rounded-xl' : 'hover:bg-cyan-600 pl-4 -ml-3 -mr-2.5 rounded-xl'}`} >
+                                    <Link to={navMenuLink.path} className="flex items-center">
+                                        <i className={navMenuLink.icon + ' text-white'}></i>
+                                        <span className={`ml-2 pl-1 duration-700 text-white ${!open && "opacity-0 -translate-x-28 scale-y-0"}`}>{navMenuLink.text}</span>
+                                        {/* Tooltip - hover text when sidebar is closed */}
+                                        {/* {!open ? (
+                                            <span className={`tooltip ml-7 cursor-default text-black font-serif text-xs font-thin bg-cyan-500 rounded p-1 px-2 opacity-0 invisible scale-0 transition-transform transform group-hover:opacity-100 group-hover:visible group-hover:scale-100`} onClick={(e) => e.preventDefault()}>{navMenuLink.text}</span>
+                                        ) : null} */}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    {/* nav to New features */}
+                    <div className="mt-20 flex text-white">
+                        <Link to="/NewFeatures" className="flex">
+                            <i className="bx bxs-briefcase pl-1 mt-1"></i>
+                            <span className={`ml-4 duration-700 ${!open && "opacity-0 -translate-x-28 overflow-hidden"}`}>Features</span>
+                            <span className={`ml-4 bg-tertiaryColor duration-700 rounded-full text-xs py-1 px-2 pt-1 text-black font-bold ${!open && "opacity-0 -translate-x-28 overflow-hidden"}`}>NEW</span>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+}
+
+export default SideBar;
