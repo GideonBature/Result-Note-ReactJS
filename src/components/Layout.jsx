@@ -6,7 +6,7 @@ function Layout({ children }) {
     return (
         <div className="flex gap-8 bg-white">
             <Sidebar />
-            <section className="flex-grow mt-4">
+            <section className="flex-grow mt-4 overflow-y-auto">
                 {children}
             </section>
         </div>

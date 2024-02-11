@@ -8,13 +8,14 @@ import Dashboard from './Pages/Dashboard'
 import NewFeatures from './Pages/NewFeatures'
 import Login from './components/login/Login';
 import Register from './components/register/Register';
-import Home from './components/landing_page/Home';
+import Home from './Pages/Home'
 
-const App = () => {
+
+function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route index element={<Dashboard />} />
+          <Route index element={<Home />} />
           <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/exam' element={<Exam />} />
           <Route path='/settings' element={<Settings />} />
@@ -22,7 +23,6 @@ const App = () => {
           <Route path='/teachers' element={<Teachers />} />
           <Route path='/newfeatures' element={<NewFeatures />} />
           <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} /> 
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
       </Routes>
@@ -30,4 +30,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App
