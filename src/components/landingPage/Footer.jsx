@@ -9,7 +9,7 @@ const Footer = () => {
                     <div class="uppercase text-white font-karla font-bold">Navigation</div>
                     <a class="text-s my-3 block font-karla font-regular text-gray-400" href="/#">Home <span class="text-teal-600 text-xs p-1"></span>
                     </a>
-                    <a class="text-s my-3 block font-karla font-regular text-gray-400" href="/#">Features <span class="text-secondaryColor text-xs p-1">New</span>
+                    <a class="text-s my-3 block font-karla font-regular text-gray-400" href="/#Features">Features <span class="text-secondaryColor text-xs p-1">New</span>
                     </a>
                     <a class="text-s my-3 block font-karla font-regular text-gray-400" href="/#">How it works <span class="text-teal-600 text-xs p-1"></span>
                     </a>
