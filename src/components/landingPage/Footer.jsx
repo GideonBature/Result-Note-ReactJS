@@ -3,7 +3,7 @@ import EmailBar from '../card/EmailBar';
 
 const Footer = () => {
     return (
-        <div class="bg-primaryColor h-screen text-white flex flex-col justify-around items-center">
+        <div id='footer' class="bg-primaryColor h-screen text-white flex flex-col justify-around items-center">
             <div class="px-4 sm:px-6 lg:px-8 flex flex-wrap justify-around w-5/6">
                 <div class="p-5">
                     <div class="uppercase text-white font-karla font-bold">Navigation</div>

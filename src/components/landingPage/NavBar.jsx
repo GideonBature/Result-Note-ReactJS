@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { animateScroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import logo from '../../assets/logo.svg';
 
 const NavBar = () => {
@@ -55,22 +54,22 @@ const NavBar = () => {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-white hover:text-secondaryColor">
-                                <a href="#" className='text-white font-kumbh hover:text-secondaryColor'>Home</a>
+                                <Link to='home' scroll={true} duration={500} smooth={true} className='text-white font-kumbh hover:text-secondaryColor'>Home</a>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <Link to="features" scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor'>Features</Link>
+                                <Link to="features" scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>Features</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla hover:text-secondaryColor'>How it works</a>
+                                <Link to='howitworks' scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>How it works</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla hover:text-secondaryColor'>Sign up</a>
+                                <Link to='signup' scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>Sign up</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla hover:text-secondaryColor'>About us</a>
+                                <Link to='about' scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>About us</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla hover:text-secondaryColor'>Others</a>
+                                <Link to='footer' scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>Others</Link>
                             </li>
                         </ul>
 
