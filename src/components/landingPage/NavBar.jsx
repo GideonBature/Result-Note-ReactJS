@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { animateScroll } from 'react-scroll';
 import logo from '../../assets/logo.svg';
 
 const NavBar = () => {
@@ -53,22 +55,22 @@ const NavBar = () => {
                     >
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-white hover:text-secondaryColor">
-                                <a href="javascript:void(0)" className='text-white font-kumbh'>Home</a>
+                                <a href="#" className='text-white font-kumbh hover:text-secondaryColor'>Home</a>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>Features</a>
+                                <Link to="features" scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor'>Features</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>How it works</a>
+                                <a href="javascript:void(0)" className='text-white font-karla hover:text-secondaryColor'>How it works</a>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>Sign up</a>
+                                <a href="javascript:void(0)" className='text-white font-karla hover:text-secondaryColor'>Sign up</a>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>About us</a>
+                                <a href="javascript:void(0)" className='text-white font-karla hover:text-secondaryColor'>About us</a>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>Others</a>
+                                <a href="javascript:void(0)" className='text-white font-karla hover:text-secondaryColor'>Others</a>
                             </li>
                         </ul>
 
