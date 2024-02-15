@@ -12,7 +12,7 @@ const Home = () => {
 
     return (
             <div>
-                <div className='bg-hero-bg bg-cover bg-center h-screen'>
+                <div className='bg-hero-bg bg-cover bg-center h-screen overflow-hidden'>
                     <NavBar />
                     <Hero />
                 </div>

@@ -48,13 +48,10 @@ const NavBar = () => {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                            navbar ? "block" : "hidden"
-                        }`}
-                    >
+                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-white hover:text-secondaryColor">
-                                <Link to='home' scroll={true} duration={500} smooth={true} className='text-white font-kumbh hover:text-secondaryColor'>Home</a>
+                                <Link to='home' scroll={true} duration={500} smooth={true} className='text-white font-kumbh hover:text-secondaryColor cursor-pointer'>Home</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
                                 <Link to="features" scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>Features</Link>
@@ -76,7 +73,7 @@ const NavBar = () => {
                         <div className="mt-3 space-y-2 lg:hidden md:inline-block">
                     <a
                         href="javascript:void(0)"
-                        className="inline-block w-full px-4 py-2 text-center text-white bg-secondaryColor rounded-full shadow hover:bg-secondaryHoverColor hover:text-white font-karla"
+                        className="inline-block w-full px-4 py-2 text-center text-white bg-secondaryColor hover:bg-secondaryHoverColor rounded-full shadow hover:text-white font-karla"
                     >
                         Login
                     </a>
@@ -86,7 +83,7 @@ const NavBar = () => {
                 <div className="hidden space-x-2 md:inline-block">
                     <a
                         href="javascript:void(0)"
-                        className="px-4 py-2 text-white bg-secondaryColor rounded-full shadow hover:bg-secondaryHoverColor hover:text-white font-karla"
+                        className="px-4 py-2 text-white bg-secondaryColor hover:bg-secondaryHoverColor rounded-full shadow  hover:text-white font-karla"
                     >
                         Login
                     </a>
