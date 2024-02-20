@@ -1,8 +1,40 @@
-i# ResultNote: Record and Generate Result
+# ResultNote: Record and Generate Result
 
 ## Overview
 
 ResultNote is a web application that is used to record students' academic records, generate results and gain insight into the students' performance.
+
+### Links
+
+Project blog post: [ResultNote](https://blog.benehub.tech/blog/resultnote/)
+
+### Authors LinkedIn
+
+- [Chiagoziem El-gibbor](https://www.linkedin.com/in/elgibbor/)
+- [Ogundiya Caleb](https://www.linkedin.com/in/ogundiyacaleb/)
+- [Gideon Bature](https://www.linkedin.com/in/gideonbature/)
+
+
+## Installation
+
+- Clone the repository: `git clone https://github.com/GideonBature/Result-Note-ReactJS.git`
+- Navigate to the cloned directory: `cd Result-Note-ReactJS`
+- Install dependencies: `npm install`
+
+## Usage
+
+- Run the application: `npm start`
+
+## Contributing
+
+- Fork the repository: `git clone https://github.com/GideonBature/Result-Note-ReactJS.git`
+- Navigate to the cloned directory: `cd Result-Note-ReactJS`
+- Install dependencies: `npm install`
+- Run the application: `npm start`
+
+## Related Projects
+
+- [ResultNote API](https://github.com/wrightkhlebisol/Result-Note-API)
 
 ## Key Features
 
@@ -38,9 +70,6 @@ ResultNote is a web application that is used to record students' academic record
 - GitHub repository: [GitHub Link]
 - Discussion forum: [Forum Link]
 
-## Contribute
-
-- We welcome contributions! Please refer to our contribution guidelines: [Contribution Guidelines Link]
 
 ## License
 
