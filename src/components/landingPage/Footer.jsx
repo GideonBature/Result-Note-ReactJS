@@ -3,13 +3,13 @@ import EmailBar from '../card/EmailBar';
 
 const Footer = () => {
     return (
-        <div class="bg-primaryColor h-screen text-white flex flex-col justify-around items-center">
+        <div id='footer' class="bg-primaryColor h-screen text-white flex flex-col justify-around items-center">
             <div class="px-4 sm:px-6 lg:px-8 flex flex-wrap justify-around w-5/6">
                 <div class="p-5">
                     <div class="uppercase text-white font-karla font-bold">Navigation</div>
                     <a class="text-s my-3 block font-karla font-regular text-gray-400" href="/#">Home <span class="text-teal-600 text-xs p-1"></span>
                     </a>
-                    <a class="text-s my-3 block font-karla font-regular text-gray-400" href="/#">Features <span class="text-secondaryColor text-xs p-1">New</span>
+                    <a class="text-s my-3 block font-karla font-regular text-gray-400" href="/#Features">Features <span class="text-secondaryColor text-xs p-1">New</span>
                     </a>
                     <a class="text-s my-3 block font-karla font-regular text-gray-400" href="/#">How it works <span class="text-teal-600 text-xs p-1"></span>
                     </a>

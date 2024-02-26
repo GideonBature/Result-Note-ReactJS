@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import logo from '../../assets/logo.svg';
 
 const NavBar = () => {
@@ -47,35 +48,32 @@ const NavBar = () => {
                 </div>
                 <div>
                     <div
-                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
-                            navbar ? "block" : "hidden"
-                        }`}
-                    >
+                        className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"}`}>
                         <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-white hover:text-secondaryColor">
-                                <a href="javascript:void(0)" className='text-white font-kumbh'>Home</a>
+                                <Link to='home' scroll={true} duration={500} smooth={true} className='text-white font-kumbh hover:text-secondaryColor cursor-pointer'>Home</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>Features</a>
+                                <Link to="features" scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>Features</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>How it works</a>
+                                <Link to='howitworks' scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>How it works</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>Sign up</a>
+                                <Link to='signup' scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>Sign up</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>About us</a>
+                                <Link to='about' scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>About us</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)" className='text-white font-karla'>Others</a>
+                                <Link to='footer' scroll={true} duration={500} smooth={true} className='text-white font-karla hover:text-secondaryColor cursor-pointer'>Others</Link>
                             </li>
                         </ul>
 
                         <div className="mt-3 space-y-2 lg:hidden md:inline-block">
                     <a
                         href="javascript:void(0)"
-                        className="inline-block w-full px-4 py-2 text-center text-white bg-secondaryColor rounded-full shadow hover:bg-secondaryHoverColor hover:text-white font-karla"
+                        className="inline-block w-full px-4 py-2 text-center text-white bg-secondaryColor hover:bg-secondaryHoverColor rounded-full shadow hover:text-white font-karla"
                     >
                         Login
                     </a>
@@ -85,7 +83,7 @@ const NavBar = () => {
                 <div className="hidden space-x-2 md:inline-block">
                     <a
                         href="javascript:void(0)"
-                        className="px-4 py-2 text-white bg-secondaryColor rounded-full shadow hover:bg-secondaryHoverColor hover:text-white font-karla"
+                        className="px-4 py-2 text-white bg-secondaryColor hover:bg-secondaryHoverColor rounded-full shadow  hover:text-white font-karla"
                     >
                         Login
                     </a>
