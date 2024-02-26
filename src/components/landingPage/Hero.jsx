@@ -3,8 +3,8 @@ import React from 'react';
 const Hero = () => {
  return (
    <div id='home' className="w-screen h-screen -my-20 text-white bg-center bg-cover">
-     <div class="container mx-auto flex h-full text-center my-auto items-center justify-center flex-col">
-       <div class="text-center lg:w-5/12 w-full flex-col">
+     <div className="container mx-auto flex h-full text-center my-auto items-center justify-center flex-col">
+       <div className="text-center lg:w-5/12 w-full flex-col">
          <h1 className="mx-auto text-5xl font-bold leading-tight font-kumbh pt-20">
             Manage your Students Result Easily
          </h1>
