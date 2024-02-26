@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import Exam from './Pages/Exam'
-import Settings from './Pages/Settings'
-import Students from './Pages/Students'
-import Teachers from './Pages/Teachers'
-import Dashboard from './Pages/Dashboard'
-import NewFeatures from './Pages/NewFeatures'
+import Exam from './pages/Exam'
+import Settings from './pages/Settings'
+import Students from './pages/Students'
+import Teachers from './pages/Teachers'
+import Dashboard from './pages/Dashboard'
+import NewFeatures from './pages/NewFeatures'
 import Login from './components/login/Login';
 import Register from './components/register/Register';
-import Home from './Pages/Home'
+import Home from './pages/Home'
 
 
 function App() {
