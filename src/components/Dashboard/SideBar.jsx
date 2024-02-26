@@ -4,11 +4,11 @@ import mainlogo from '/src/assets/logo-RN.png';
 import { Link } from 'react-router-dom';
 
 const navLinks = [
-    { icon: 'bx bx-grid-alt', text: 'Dashboard', path: '/Dashboard' },
-    { icon: 'bx bxs-graduation', text: 'Student/Classes', path: '/Students' },
-    { icon: 'bx bx-bar-chart-square', text: 'Examinations', path: '/Exam' },
-    { icon: 'bx bx-user', text: 'Teachers', path: '/Teachers' },
-    { icon: 'bx bx-cog', text: 'Settings/profile', path: '/Settings' },
+    { icon: 'bx bx-grid-alt', text: 'Dashboard', path: '/dashboard' },
+    { icon: 'bx bxs-graduation', text: 'Student/Classes', path: '/students' },
+    { icon: 'bx bx-bar-chart-square', text: 'Examinations', path: '/exam' },
+    { icon: 'bx bx-user', text: 'Teachers', path: '/teachers' },
+    { icon: 'bx bx-cog', text: 'Settings/profile', path: '/settings' },
 ];
 
 function SideBar() {
