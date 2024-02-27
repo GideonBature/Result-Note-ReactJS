@@ -82,7 +82,7 @@ const NavBar = () => {
                 </div>
                 <div className="hidden space-x-2 md:inline-block">
                     <a
-                        href="javascript:void(0)"
+                        href="/login"
                         className="px-4 py-2 text-white bg-secondaryColor hover:bg-secondaryHoverColor rounded-full shadow  hover:text-white font-karla"
                     >
                         Login
