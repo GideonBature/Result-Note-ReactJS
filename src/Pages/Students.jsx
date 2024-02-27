@@ -16,7 +16,7 @@ function Students() {
     const contents = [
         {
             details: {
-                name: 'Gideon Bature',
+                name: 'Gideon B',
                 src: '/src/assets/gideon.jpeg'
             },
             id: 3245,
@@ -27,21 +27,34 @@ function Students() {
         },
         {
             details: {
-                name: 'Gideon Bature',
-                src: '/src/assets/gideon.jpeg'
+                name: 'Elgibbor C',
+                src: '/src/assets/elgibbor.png'
             },
             id: 3246,
-            email: 'caleb@gmail.com',
-            class: 'SS2',
+            email: 'elgibbor@gmail.com',
+            class: 'SS3',
             gender: 'male',
-            bulk: true,
+            bulk: false,
+        },
+        {
+            details: {
+                name: 'Caleb O',
+                src: '/src/assets/caleb.jpeg'
+            },
+            id: 3247,
+            email: 'caleb@gmail.com',
+            class: 'SS1',
+            gender: 'female',
+            bulk: false,
         }
     ]
 
     return (
         <Layout>
             <section className='mt-16 font-sans font-bold text-black'>
-                <StudentData headings={columnNames} contents={contents}  />
+                <h1 className='mb-3'>Students</h1>
+                {contents.length === 0 ? "<p className=''>No student data available</p>" :
+                    <StudentData headings={columnNames} contents={contents} />}
             </section>
         </Layout>
     );
