@@ -39,12 +39,11 @@ const Login = () => {
             />
           </div>
           <div>
-            <button
-              type="submit"
+            <a href="/dashboard"
               className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-btnColor hover:bg-btnHoverColor focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
               Log in
-            </button>
+            </a>
             
           </div>
           <p className='text-center text-gray-800 mt-2'>Don't have an account? <a href='register' className='text-btnColor font-bold hover:text-btnHoverColor'>Sign up</a></p>
