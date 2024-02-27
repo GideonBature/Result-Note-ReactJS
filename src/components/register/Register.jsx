@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Register = () => {
-  const [currentStep, setCurrentStep] = useState(2);
+  const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState({
     adminName: '',
     schoolName: '',
@@ -61,6 +61,7 @@ const Register = () => {
       );
     case 2:
       return (
+
         <div className="h-screen w-screen flex-col items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 font-kumbh mx-auto">Welcome, create your school account</h2>
           <div className="max-w-xl w-full space-y-8  bg-white m-10 h-auto  p-8 rounded-md mx-auto">

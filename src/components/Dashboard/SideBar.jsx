@@ -57,7 +57,7 @@ function SideBar() {
                     </div>
                     {/* nav to New features */}
                     <div className="mt-20 flex text-white">
-                        <Link to="/NewFeatures" className="flex">
+                        <Link to="/newfeatures" className="flex">
                             <i className="bx bxs-briefcase pl-1 mt-1"></i>
                             <span className={`ml-4 duration-700 ${!open && "opacity-0 -translate-x-28 overflow-hidden"}`}>Features</span>
                             <span className={`ml-4 bg-tertiaryColor duration-700 rounded-full text-xs py-1 px-2 pt-1 text-black font-bold ${!open && "opacity-0 -translate-x-28 overflow-hidden"}`}>NEW</span>
