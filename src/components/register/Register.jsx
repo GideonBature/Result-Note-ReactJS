@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Register = () => {
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(2);
   const [formData, setFormData] = useState({
     adminName: '',
     schoolName: '',
@@ -61,7 +61,6 @@ const Register = () => {
       );
     case 2:
       return (
-
         <div className="h-screen w-screen flex-col items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 font-kumbh mx-auto">Welcome, create your school account</h2>
           <div className="max-w-xl w-full space-y-8  bg-white m-10 h-auto  p-8 rounded-md mx-auto">
@@ -78,13 +77,30 @@ const Register = () => {
                 <p className="text-red-500">Passwords do not match!</p>
               )}
             </div>
-            <button type="submit" className="btn-submit btn-next w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-btnColor hover:bg-btnHoverColor focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" disabled={formData.password !== formData.confirmPassword}>
+            <button type="submit" onClick={nextStep} className="btn-submit btn-next w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-btnColor hover:bg-btnHoverColor focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" disabled={formData.password !== formData.confirmPassword || (!formData.password) || (!formData.confirmPassword)}>
               Submit
             </button>
         </form>
           </div>
         </div>
 
+      );
+    case 3:
+      return (
+        <div className="h-screen w-screen flex-col items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+          <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900 font-kumbh mx-auto">School Created!</h2>
+          <div className="max-w-xl w-full space-y-8  bg-white m-10 h-auto  p-8 rounded-md mx-auto">
+            <div className="mt-8 space-y-6 mx-auto text-center px-20">
+              <p className="text-lg text-gray-900 font-kumbh">School has been created successfully, please check your email to verify your account!</p>
+
+            <a href='/dashboard' className="btn-submit btn-next w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-btnColor hover:cursor-pointer hover:bg-btnHoverColor focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+              Continue
+            </a>
+            </div>
+            
+          </div>
+          
+        </div>
       );
     default:
       return null;
