@@ -12,7 +12,12 @@ const Register = () => {
 
   // Function to handle the next step
   const nextStep = () => {
-    setCurrentStep(currentStep + 1);
+    if (currentStep === 3) {
+      setCurrentStep(1);
+    } else {
+      setCurrentStep(currentStep + 1);
+    }
+
   };
 
   // Function to handle form input changes
