@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import Exam from './pages/Exam'
+import Score from './pages/Score'
 import Settings from './pages/Settings'
 import Students from './pages/Students'
 import Teachers from './pages/Teachers'
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/exam' element={<Exam />} />
+          <Route path='/scores' element={<Score />} />
           <Route path='/settings' element={<Settings />} />
           <Route path='/students' element={<Students />} />
           <Route path='/teachers' element={<Teachers />} />

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const navLinks = [
     { icon: 'bx bx-grid-alt', text: 'Dashboard', path: '/dashboard' },
     { icon: 'bx bxs-graduation', text: 'Student/Classes', path: '/students' },
-    { icon: 'bx bx-bar-chart-square', text: 'Examinations', path: '/exam' },
+    { icon: 'bx bx-bar-chart-square', text: 'Scores', path: '/scores' },
     { icon: 'bx bx-user', text: 'Teachers', path: '/teachers' },
     { icon: 'bx bx-cog', text: 'Settings/profile', path: '/settings' },
 ];
