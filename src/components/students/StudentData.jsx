@@ -1,6 +1,5 @@
 import React from 'react';
 import StudentProfile from './StudentProfile';
-import Gideon from '/src/assets/gideon.jpeg'
 
 import Table from '../table/Table';
 
