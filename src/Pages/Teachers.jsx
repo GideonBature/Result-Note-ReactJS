@@ -129,7 +129,7 @@ function Teachers() {
                             <p>Teachers will appear here after you add them to your school.</p>
                         </div>
                     ) :
-                    <StudentData headings={columnNames} contents={contents} />}
+                        <StudentData headings={columnNames} contents={contents} profile={true} />}
             </section>
         </Layout>)
     );

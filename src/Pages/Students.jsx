@@ -125,13 +125,16 @@ function Students() {
         <Layout>
             <section className='mt-16 font-sans font-bold text-black'>
                 <h1 className='mb-3'>Students</h1>
-                {contents.length === 0 ? (
-                    <div className='text-center'>
-                        <p>No student data available</p>
-                        <p>Students will appear here after they enroll in your school.</p>
-                    </div>
-                ) :
-                    <StudentData headings={columnNames} contents={contents} />}
+                {
+                    contents.length === 0 ? (
+                        <div className='text-center'>
+                            <p>No student data available</p>
+                            <p>Students will appear here after they enroll in your school.</p>
+                        </div>
+                    ) : (
+                        <StudentData headings={columnNames} contents={contents} profile={true} />
+                    )
+                }
             </section>
         </Layout>
     );
